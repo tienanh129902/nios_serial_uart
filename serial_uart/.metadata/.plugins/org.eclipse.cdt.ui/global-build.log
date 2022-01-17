@@ -1,0 +1,28 @@
+15:07:50 **** Incremental Build of configuration Nios II for project serial_uart ****
+make all 
+Info: Building ../serial_uart_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../serial_uart_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../serial_uart_bsp//HAL/inc -I../serial_uart_bsp/ -I../serial_uart_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:107:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+    sprintf(tx,"%c \n",uart_getChar());
+    ^
+hello_world_small.c:107:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+hello_world_small.c:107:4: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+hello_world_small.c:107:4: warning: 'tx' is used uninitialized in this function [-Wuninitialized]
+Info: Linking serial_uart.elf
+nios2-elf-g++  -T'../serial_uart_bsp//linker.x' -msys-crt0='../serial_uart_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../serial_uart_bsp/  -msmallc  -Wl,-Map=serial_uart.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o serial_uart.elf obj/default/hello_world_small.o obj/default/src/myUart.o -lm -msys-lib=m
+nios2-elf-insert serial_uart.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name serial_uart --quartus_project_dir "E:/FPGA/serial_uart" --jdi ../..//output_files/serial_uart.jdi --sopcinfo E:/FPGA/serial_uart/software/serial_uart_bsp/../../serial_uart.sopcinfo
+Info: (serial_uart.elf) 6188 Bytes program size (code + initialized data).
+Info:                   1764 Bytes free for stack + heap.
+Info: Creating serial_uart.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source serial_uart.elf >serial_uart.objdump
+[serial_uart build complete]
+15:07:54 **** Incremental Build of configuration Nios II for project serial_uart ****
+make all 
+Info: Building ../serial_uart_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../serial_uart_bsp/
+[BSP build complete]
+[serial_uart build complete]

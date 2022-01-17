@@ -1,0 +1,11 @@
+#ifndef _MYUART_H_
+#define _MYUART_H_
+
+void UART_init(unsigned int UART_address,unsigned int BaudRate);
+void UART_isr(unsigned int UART_address);
+unsigned char isEmptyUart(unsigned int UART_address);
+unsigned char UART_getChar(unsigned int UART_address);
+unsigned char UART_putChar(unsigned int UART_address, unsigned char in_char);
+
+
+#endif //_MYUART_H_

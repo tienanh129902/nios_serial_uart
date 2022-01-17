@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=E\:\\FPGA\\serial_uart\\software\\serial_uart_isr
+newSoftwareExampleWizardPage.sopcinfoFile=E\:\\FPGA\\serial_uart\\serial_uart.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=E\:\\FPGA\\serial_uart\\software\\serial_uart_isr_bsp

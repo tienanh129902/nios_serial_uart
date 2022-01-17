@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;serial_uart_isr&apos;" deleteContents="false" description="Delete resource &apos;serial_uart_isr&apos;" element1="/serial_uart_isr" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1642406091506"/>&#x0A;<refactoring comment="Delete resource &apos;serial_uart_isr_bsp&apos;" deleteContents="false" description="Delete resource &apos;serial_uart_isr_bsp&apos;" element1="/serial_uart_isr_bsp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1642406094057"/>
+</session>
